@@ -1,0 +1,109 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
+
+.sidebar {
+  width: 350px;
+  height: 100vh;
+  background-color: #4a2b78;
+}
+
+.sidebar > h2 {
+  margin-left: 1rem;
+}
+
+.library {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 19rem);
+  grid-template-rows: repeat(autofit, 12rem);
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: .5rem;
+}
+
+.form-row [type="text"],
+.form-row [type="number"] {
+ width: 300px;
+ border-radius: 7px;
+}
+
+.form-row [type="checkbox"] {
+  cursor: pointer;
+}
+
+#form-read-checked {
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.form-row button {
+  width: 100px;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 18rem;
+  height: 12rem;
+  border-radius: 1rem;
+
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.card > h2 {
+  margin-left: 1rem;
+}
+
+.card > h3 {
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.card > p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+}
+
+.read-status {
+  margin: 0;
+}
+
+.read-container {
+  margin-left: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.delete-book {
+  font-size: .8rem;
+  color: red;
+  cursor: pointer;
+}
+
+.change-read-status {
+  cursor: pointer;
+}
