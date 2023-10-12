@@ -65,7 +65,7 @@ body {
 .card {
   background-color: #ffffff;
   width: 18rem;
-  height: 12rem;
+  height: 14rem;
   border-radius: 1rem;
 
   color: black;
@@ -106,4 +106,5 @@ body {
 
 .change-read-status {
   cursor: pointer;
+  color: #ffffff;
 }

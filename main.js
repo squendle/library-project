@@ -113,13 +113,11 @@ function updateLibraryDisplay() {
       newCard.querySelector(".read-status").style.color = "#47b545";
       newCard.querySelector(".change-read-status").textContent = "Unread?";
       newCard.querySelector(".change-read-status").style.backgroundColor = "#cf4040";
-      newCard.querySelector(".change-read-status").style.color = "#ffffff"
     } else if (book.read === "not yet read") {
       newCard.querySelector(".read-status").textContent = "Not Yet Read";
       newCard.querySelector(".read-status").style.color = "#cf4040";
       newCard.querySelector(".change-read-status").textContent = "Read?";
-      newCard.querySelector(".change-read-status").style.backgroundColor = "#47b545";
-      newCard.querySelector(".change-read-status").style.color = "#ffffff"
+      newCard.querySelector(".change-read-status").style.backgroundColor = "#47b545"; 
     }
     newCard.querySelector(".delete-book").textContent = "Delete"
     document.querySelector(".library").appendChild(newCard);
